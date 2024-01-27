@@ -3,21 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dian's WEB</title>
+    <title>Dian's WEBSITE</title>
     <link rel="stylesheet" type="text/css" href="home.css">
-    <script src="hoverdetect.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
-
 <body>
-    <div class="nav">
-        <a class="active" href="#Home">Home</a>
+    <nav class="nav">
+        <a class="active" href="#About">About</a>
         <a href="#Project">Project</a> 
         <a href="#Experience">Experience</a>
-        <a href="#About">About</a> 
         <a href="#Contact">Contact</a>
+    </nav>
+
+    <div class="content">
+        <section class="About" id="About">
+            <p class="name">Dian Jing</p>
+            <p class="description">Computer Science Student</p>
+            <p class="description">Waseda University</p>
+            <p class="text">Hi, I am Dian. I am from Shanghai, China. Currently, I'm studying in Tokyo, Japan.</p>
+        </section>
+        
+        <section class="Project" id="Project">
+            <h2>Project</h2>
+            <ul>
+                <li>Build Basic Website</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+            </ul>
+        </section>
+        
+        <section class="Experience" id="Experience">
+            <h2>Experience</h2>
+            <ul>
+                <li>GDSC Member</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+                <li>xxxxxxx</li>
+            </ul>
+        </section>
+        
+        <div class="contact-container">
+            <section id="Contact" class="contact-section">
+                <a href="https://www.instagram.com/dian_jing_04/" target="_blank">
+                    <i class="fab fa-instagram fab-icon"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/dian-jing-88a868295/" target="_blank">
+                    <i class="fab fa-linkedin fab-icon"></i>
+                </a>
+                <a href="https://github.com/Jing-Dian" target="_blank">
+                    <i class="fab fa-github fab-icon"></i>
+                </a>
+            </section>
+        </div>
     </div>
 
-    <p class="name">Dian Jing</p>
-    <p class="description">Computer Science Student</p>
+    
+    <script src="hoverdetect.js" defer></script>
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
